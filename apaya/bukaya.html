@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thank You Khanaya Cantik</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+  }
+
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0,0,0,0.1);
+    padding: 1rem 0;
+  }
+
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    position: relative;
+    animation: marqueeRight 12s linear infinite;
+  }
+
+  @keyframes marqueeRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .audio-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255 255 255 / 0.2);
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255 255 255 / 0.3);
+  }
+
+  audio {
+    outline: none;
+  }
+</style>
+</head>
+<body>
+  <div class="marquee-container" aria-label="Running text">
+    <div class="marquee">Thank You Khanaya Cantik</div>
+  </div>
+
+  <div class="audio-container" aria-label="Music player">
+    <audio controls autoplay loop>
+      <source src="https://github.com/Haidar-creator54/Haidar-creator54.git/like.m4a" type="audio/mpeg" id="linkmp3" />
+    </audio>
+
+  <div class="text">by <span class="typing"></span></div>
+  <script></script>
+    
+  </div>
+</body>
+</html>
+
